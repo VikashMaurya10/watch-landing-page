@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.b {
+    border: 1px solid red;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.g-p {
+    gap: 10px;
+}
+
+.G-P {
+    gap: 15px;
+}
+
+ul,
+button {
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+ul li {
+    text-transform: uppercase;
+    padding: 0 17px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #8f969d;
+    transition: all 0.3s ease-in-out
+}
+
+ul li a:hover {
+    color: #374048;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #374048;
+}
+
+h3 {
+    color: #374048;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+h4 {
+    color: #374048;
+}
+
+.line {
+    height: 5px;
+    width: 5rem;
+    background-color: #969da35c;
+    margin: 2rem 0;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 6rem;
+    z-index: 1;
+}
+
+header .header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #f62;
+    padding: 8px 34px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+
+.btn a,
+.btn a:hover {
+    color: white;
+}
+
+.btn:hover {
+    background-color: #374048;
+}
+
+.home {
+    padding: 2.5rem 0;
+    background: no-repeat url("./asset/images/header-background.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 130vh;
+}
+
+main .home .inner-home {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.inner-home h1 {
+    color: #374048;
+    font-size: 4.937rem;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+.inner-home p {
+    max-width: 780px;
+    color: #8a9095;
+    margin: 0 auto;
+    font-size: 1.65rem;
+    padding-bottom: 2.4rem;
+    font-weight: 300;
+}
+
+.inner-home button {
+    margin: 0 auto;
+    color: white;
+    background-color: #0084ff;
+    padding: 1rem 5rem;
+    border-radius: 60px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.home .watch {
+    width: 24%;
+}
+
+/* product section */
+.product {
+    min-height: 100vh;
+}
+
+.product p,
+.work p,
+.features p,
+.collection p,.about p {
+    color: #969da3;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.product img {
+    margin: 5rem;
+}
+
+/* work section */
+.work {
+    background-color: #f8fbfd;
+    min-height: 100vh;
+}
+
+.inner-work {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.inner-work p {
+    margin-bottom: 3.5rem;
+}
+
+.work .items {
+    padding-top: 35px;
+}
+
+.items .item {
+    text-align: center;
+    min-width: 40.333%;
+}
+
+.items .item img {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.items .item p {
+    font-size: 16px;
+    color: #737c85;
+}
+
+.items img {
+    width: 50px;
+}
+
+/* feature section */
+
+.features {
+    min-height: 100vh;
+}
+
+.features .inner-features {
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.properties {
+    margin-top: 3rem;
+}
+
+.inner-contant h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 9;
+}
+
+.inner-contant p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.inner-contant h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 9;
+}
+
+.feature-contant {
+    align-items: center;
+    margin: 3rem 0.5rem;
+}
+
+ion-icon {
+    width: 4rem;
+    height: 4rem;
+    color: black;
+}
+
+.feature-contant img {
+    width: 2.2rem;
+}
+/* section About */
+.about{
+    min-height: 100vh;
+    background-color: #f8fbfd;
+}
+
+.about .inner-about{
+    margin: 0 auto;
+    max-width: 75%;
+}
+.about .left{
+    max-width: 45%;
+}
+.about .left p{
+    text-align: left;
+}
+
+.about ul li ion-icon{
+    width: 2.5rem;
+}
+.about ul li{
+    font-weight: 400;
+    color:#696f74;
+}
+/* section collection */
+
+.collection {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.inner-collection {
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.inner-collection .line {
+    margin-bottom: 7rem;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.box::after {
+    position: absolute;
+    content: '';
+    height: 35rem;
+    width: 7rem;
+    background: linear-gradient( to right ,#0011ff, rgb(0, 255, 255));
+    top: -20%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.w-collection {
+    background-color: rgb(255, 158, 158);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.w-collection img {
+    width: 100%;
+    border-radius:5px ;
+}
+
+.w-collection p {
+    font-size: 0.9rem;
+    color: rgb(0, 2, 132);
+}
+
+.w-collection span {
+    font-size: 19px;
+    color: #002e58;
+    font-weight: 600;
+}
+
+.w-collection button {
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 2rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    border: 1px solid #737c85;
+    background-color:#f8fbfd;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.w-collection button:hover {
+    background-color: #0011ff6a;
+    color:white;
+}
+

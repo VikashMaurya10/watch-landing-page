@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+ul,
+button {
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+ul li {
+    text-transform: uppercase;
+    padding: 0 17px;
+    font-weight: 500;
+    font-size: 16px;
+}
+main{
+    position: relative;
+}
+section {
+    border: 2px solid black;
+}
+header nav{
+    position: fixed;
+    padding: 1rem 0;
+    background-color: gray;
+}
+.header {
+    position: relative;
+    background: no-repeat url("./asset/images/header-background.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.header .watch {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .inner-section {
+    max-width: 75%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #8f969d;
+    text-align: center;
+}
+
+ul li a:hover {
+    color: #374048;
+}
+
+.contant {
+    margin-top:5rem ;
+    min-height: 100vh;
+}
+
+.header .contant h1 {
+    font-size: 68px;
+}
+
+.header .contant p {
+    font-size: 24px;
+}
+
+.header .contant button {
+    color: white;
+    background-color: #0084ff;
+    padding: 1.5rem 4rem;
+    border-radius: 60px;
+    font-size: 27px;
+}
