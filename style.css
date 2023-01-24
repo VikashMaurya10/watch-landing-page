@@ -8,8 +8,9 @@
     line-height: 1.5;
 }
 
-body {
+html {
     scroll-behavior: smooth;
+    transition: scroll 1s ease-in-out;
 }
 
 .b {
@@ -179,7 +180,10 @@ main .home .inner-home {
 .product p,
 .work p,
 .features p,
-.collection p,.about p {
+.collection p,
+.about p,
+.reviews p,
+.teams p {
     color: #969da3;
     font-weight: 300;
     font-size: 20px;
@@ -274,30 +278,35 @@ ion-icon {
 .feature-contant img {
     width: 2.2rem;
 }
+
 /* section About */
-.about{
+.about {
     min-height: 100vh;
     background-color: #f8fbfd;
 }
 
-.about .inner-about{
+.about .inner-about {
     margin: 0 auto;
     max-width: 75%;
 }
-.about .left{
+
+.about .left {
     max-width: 45%;
 }
-.about .left p{
+
+.about .left p {
     text-align: left;
 }
 
-.about ul li ion-icon{
+.about ul li ion-icon {
     width: 2.5rem;
 }
-.about ul li{
+
+.about ul li {
     font-weight: 400;
-    color:#696f74;
+    color: #696f74;
 }
+
 /* section collection */
 
 .collection {
@@ -324,9 +333,9 @@ ion-icon {
 .box::after {
     position: absolute;
     content: '';
-    height: 35rem;
+    height: 40rem;
     width: 7rem;
-    background: linear-gradient( to right ,#0011ff, rgb(0, 255, 255));
+    background: linear-gradient(to right, #0011ff, rgb(0, 255, 255));
     top: -20%;
     transform: translate(-50%, -50%);
     animation: rotate 5s linear infinite;
@@ -351,7 +360,7 @@ ion-icon {
 
 .w-collection img {
     width: 100%;
-    border-radius:5px ;
+    border-radius: 5px;
 }
 
 .w-collection p {
@@ -371,13 +380,98 @@ ion-icon {
     border-radius: 20px;
     font-size: 0.7rem;
     border: 1px solid #737c85;
-    background-color:#f8fbfd;
+    background-color: #f8fbfd;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .w-collection button:hover {
     background-color: #0011ff6a;
-    color:white;
+    color: white;
 }
 
+/* section reviews */
+.reviews {
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8fbfd;
+}
+
+.inner-reviews {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.review {
+    max-width: 32%;
+}
+
+.review p {
+    color: #353535;
+}
+
+.review img {
+    margin: 3rem 0;
+    opacity: 0.5;
+}
+
+/* section team */
+
+.teams {
+    min-height: 100vh;
+    text-align: center;
+}
+.teams img{
+    width: 100%;
+}
+.inner-teams {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.team {
+    background-color: #f8fbfdb4;
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.team p {
+    font-size: 1rem;
+    color: black;
+}
+
+.t {
+    margin-top: 2rem;
+    width: 100%;
+}
+.c-icon{
+    margin: 3rem;
+}
+.c-icon ion-icon{
+    color:#fff;
+    background-color:rgba(255, 100, 34, 0.723);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 9px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.c-icon ion-icon:hover{
+    color: #353535;
+}
+footer .inner-footer{
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: #f8fbfd;
+}
+
+footer p{
+    color: #696f74;
+    font-size: 12px;
+}
