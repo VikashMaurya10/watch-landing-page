@@ -1,0 +1,84 @@
+@media (max-width:1280px) {
+    header .header nav ul .btn {
+        display: none;
+    }
+}
+
+@media (max-width:890px) {
+    header .header nav ul {
+        display: none;
+    }
+
+    .header nav ion-icon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+    }
+    .product img{
+        width: 50%;
+    }
+
+    .inner-work .items {
+        flex-wrap: wrap;
+    }
+
+    .inner-work .items img {
+        width: 0%;
+    }
+
+    .inner-work .items .item img {
+        width: 20%;
+    }
+
+    .inner-features .properties,
+    .watches {
+        flex-wrap: wrap;
+    }
+
+    .inner-features .properties .w {
+        padding: 0;
+        flex: 1 300px;
+    }
+
+    .inner-about {
+        flex-direction: column-reverse;
+    }
+
+    .about .inner-about .left {
+        width: 100%;
+    }
+
+    .about .inner-about img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .inner-about .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner-reviews .r,
+    .t {
+        flex-wrap: wrap;
+    }
+
+    .inner-reviews .r .review {
+        flex: 1 220px;
+    }
+    .feature-contant{
+        margin:.7rem 0 ;
+    }
+}
+
+@media (max-width:380px) {
+    .home .inner-home h1{
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    .home .inner-home button {
+        padding: 0.5rem 2.5rem;
+    }
+}
