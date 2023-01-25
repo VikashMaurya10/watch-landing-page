@@ -2,19 +2,51 @@
     header .header nav ul .btn {
         display: none;
     }
+
 }
 
 @media (max-width:890px) {
-    header .header nav ul {
-        display: none;
-    }
-
     .header nav ion-icon {
         display: block;
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
-    .product img{
+
+    header {
+        height: 3rem;
+    }
+
+    .header nav {
+        width: 100%;
+        display: flex;
+    }
+
+    .header nav a img {
+        width: 60%;
+    }
+
+    .header ul {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: -900px;
+        width: 100%;
+        text-align: center;
+        background-color: #f8fbfd;
+        z-index: 99;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .show-nav {
+        left: 0 !important;
+    }
+
+    .header ul li {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .product img {
         width: 50%;
     }
 
@@ -68,16 +100,18 @@
     .inner-reviews .r .review {
         flex: 1 220px;
     }
-    .feature-contant{
-        margin:.7rem 0 ;
+
+    .feature-contant {
+        margin: .7rem 0;
     }
 }
 
 @media (max-width:380px) {
-    .home .inner-home h1{
+    .home .inner-home h1 {
         font-size: 3rem;
         letter-spacing: 1px;
     }
+
     .home .inner-home button {
         padding: 0.5rem 2.5rem;
     }
